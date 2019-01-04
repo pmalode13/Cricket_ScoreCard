@@ -1,0 +1,78 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto ">
+      <div class="card card-signin my-5 jumbotron">
+        <div class="card-body">
+          <h3 class="card-title text-center">Add Summary</h3>
+          <form class="form-signin">
+            <div class="form-label-group">
+
+              <label>Possibility of Runs</label>
+              <select class="hideLabel form-control" (change)="onSelectOfPossibility()" #possiblerun>
+                <option selected="">Select Team 1</option>
+                <option>
+                  1
+                </option>
+                <option>
+                  2
+                </option>
+                <option>
+                  3
+                </option>
+                <option>
+                  4
+                </option>
+                <option>
+                  6
+                </option>
+                <option>
+                  Wicket
+                </option>
+              </select>
+            </div>
+
+            <div class="form-label-group my-2 ">
+              <label for="">Wicket</label>
+              <select class="hideLabel form-control" #wickettype [disabled]="btnDisable" (change)="onSelectOfWicket()">
+                <option selected="">Select Wicket</option>
+                <option>
+                  Catch
+                </option>
+                <option>
+                  Bold
+                </option>
+
+                <option>
+                  Runout
+                </option>
+
+                <option>
+                  Stumping
+                </option>
+                <option>
+                  Hitwicket
+                </option>
+
+              </select>
+            </div>
+
+
+            <div class="form-label-group my-2 ">
+              <label for="">Catch By</label>
+              <select class="hideLabel form-control" [disabled]="btnCatchByDisable">
+                <option selected="">Player Name</option>
+                <option>
+
+                </option>
+
+              </select>
+            </div>
+
+
+            <button class="btn btn-lg btn-primary btn-block text-uppercase " type="button">Add Score</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

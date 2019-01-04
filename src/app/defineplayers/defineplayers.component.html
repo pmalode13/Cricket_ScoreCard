@@ -1,0 +1,58 @@
+<div class="d-flex flex-row">
+<div class="col-sm-3 col-md-6">
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col" colspan="3">{{matchserv.maTch[0].team1}}</th>
+            
+          </tr>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Player Name</th>
+        
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+       <td ><input type="text"></td>
+        
+      </tr>
+      
+      
+    </tbody>
+  </table>
+  
+</div>
+
+<div class="col-sm-3 col-md-6">
+  <table class="table">
+      <thead class="thead-dark">
+          <tr>
+              <th scope="col">#</th>
+              <th scope="col" colspan="3">{{matchserv.maTch[0].team2}}</th>
+              
+            </tr>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Player Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr  >
+          <th scope="row">1</th>
+          <td ><input type="text"></td>
+         
+          
+        </tr>
+        
+        
+      </tbody>
+    </table>
+    
+  </div>
+  
+  </div>
+<div><button (click)="onStartMatchClicked()">Start Match</button>
